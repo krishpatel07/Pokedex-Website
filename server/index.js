@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://krishpatel5311:VN7W5fwcpmWdHFiR@cluster0.12dmpds.mongodb.net/");
+mongoose.connect("ADD YOUR MONGODB URL HERE");
 
 app.get("/getUsers", (req,res)=> {
     UserModel.find()
